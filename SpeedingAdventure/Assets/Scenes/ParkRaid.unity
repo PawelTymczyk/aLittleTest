@@ -1690,7 +1690,7 @@ GameObject:
   - component: {fileID: 586609146}
   - component: {fileID: 586609145}
   m_Layer: 0
-  m_Name: City Terrain
+  m_Name: Park Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

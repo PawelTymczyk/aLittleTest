@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CityRaid.unity
     guid: 48303317f6c4b664fa7e83e921078ae3
+  - enabled: 1
+    path: Assets/Scenes/ParkRaid.unity
+    guid: f57acb90c2061a6418e4c36d81c64c26
   m_configObjects: {}
