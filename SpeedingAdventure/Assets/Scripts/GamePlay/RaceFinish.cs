@@ -25,9 +25,7 @@ public class RaceFinish : MonoBehaviour
 
     void OnTriggerEnter()
     {
-        this.GetComponent<BoxCollider>().enabled = false;
         CompleteTrigger.SetActive(false);
-        AICar.SetActive(false);
         LevelMusic.SetActive(false);
         FinishMusic.Play();
         FinishScreen.SetActive(true);

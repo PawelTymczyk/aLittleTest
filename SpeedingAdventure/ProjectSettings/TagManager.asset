@@ -7,6 +7,9 @@ TagManager:
   - DreamCar01
   - CarPosition
   - Music
+  - DreamCar02
+  - DreamCar03
+  - DreamCar04
   layers:
   - Default
   - TransparentFX
