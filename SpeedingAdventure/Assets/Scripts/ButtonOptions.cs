@@ -40,19 +40,23 @@ public class ButtonOptions : MonoBehaviour
         SceneManager.LoadScene(6);
     }
 
-    public void Track02()
+    public void CityTrack()
     {
-        //SceneManager.LoadScene();
+        SceneManager.LoadScene(7);
     }
 
-    public void Track03()
+    public void PrakTrack()
     {
-        //SceneManager.LoadScene();
+        SceneManager.LoadScene(8);
     }
 
-    public void Track04()
+    public void AchivnetScene()
     {
-        //SceneManager.LoadScene();
+        SceneManager.LoadScene(9);
     }
 
+    //public void Track04()
+    //{
+        //SceneManager.LoadScene();
+    //}
 }

@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ControlScene.unity
     guid: 0cee8050ce3843a4ea136954d3e7a4c5
+  - enabled: 1
+    path: Assets/Scenes/CityRaid.unity
+    guid: 48303317f6c4b664fa7e83e921078ae3
   m_configObjects: {}
