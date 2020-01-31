@@ -24,15 +24,17 @@ public class Achivments : MonoBehaviour
 
     void Start()
     {
-        //GetValue();
+        GetValue();
         SetActiveInactive();
     }
     
     void Update()
     {
-        //GetValue();
+        GetValue();
         SetActiveInactive();
     }
+
+
 
     private void ResetAchivments()
     {
@@ -132,14 +134,11 @@ public class Achivments : MonoBehaviour
     public void SetOne()
     {
         PlayerPrefs.SetInt("forestTimeAchivment", 1);
-        PlayerPrefs.SetInt("forestScoreAchivment", 1);
+        PlayerPrefs.SetInt("forestScoreAchivment", 0);
         PlayerPrefs.SetInt("forestRaceAchivment", 1);
 
-        PlayerPrefs.SetInt("cityTimeAchivment", 1);
+        PlayerPrefs.SetInt("cityTimeAchivment", 0);
         PlayerPrefs.SetInt("cityScoreAchivment", 1);
-        PlayerPrefs.SetInt("cityRaceAchivment", 1);
-
-
-        SceneManager.LoadScene(9);
+        PlayerPrefs.SetInt("cityRaceAchivment", 0);
     }
 }
