@@ -13,14 +13,23 @@ public class Achivments : MonoBehaviour
     public GameObject cityScore;
     public GameObject cityRace;
 
+    public GameObject torTime;
+    public GameObject torScore;
+    public GameObject torRace;
 
-    public int forestTimeValue;
-    public int forestScoreValue;
-    public int forestRaceValue;
 
-    public int cityTimeValue;
-    public int cityScoreValue;
-    public int cityRaceValue;
+    private int forestTimeValue;
+    private int forestScoreValue;
+    private int forestRaceValue;
+
+    private int cityTimeValue;
+    private int cityScoreValue;
+    private int cityRaceValue;
+
+    private int torTimeValue;
+    private int torScoreValue;
+    private int torRaceValue;
+
 
     void Start()
     {
@@ -51,6 +60,10 @@ public class Achivments : MonoBehaviour
         cityTimeValue = PlayerPrefs.GetInt("cityTimeAchivment");
         cityScoreValue = PlayerPrefs.GetInt("cityScoreAchivment");
         cityRaceValue = PlayerPrefs.GetInt("cityRaceAchivment");
+
+        torTimeValue = PlayerPrefs.GetInt("torTimeAchivment");
+        torScoreValue = PlayerPrefs.GetInt("torScoreAchivment");
+        torRaceValue = PlayerPrefs.GetInt("torRaceAchivment");
     }
 
     private void SetFalseValue()
@@ -62,6 +75,10 @@ public class Achivments : MonoBehaviour
         PlayerPrefs.SetInt("cityTimeAchivment", 0);
         PlayerPrefs.SetInt("cityScoreAchivment", 0);
         PlayerPrefs.SetInt("cityRaceAchivment", 0);
+
+        PlayerPrefs.SetInt("torTimeAchivment", 0);
+        PlayerPrefs.SetInt("torScoreAchivment", 0);
+        PlayerPrefs.SetInt("torRaceAchivment", 0);
     }
 
     private void SetActiveInactive()
@@ -119,6 +136,33 @@ public class Achivments : MonoBehaviour
         {
             cityRace.SetActive(false);
         }
+
+        if (torTimeValue == 1)
+        {
+            torTime.SetActive(true);
+        }
+        else
+        {
+            torTime.SetActive(false);
+        }
+
+        if (torScoreValue == 1)
+        {
+            torScore.SetActive(true);
+        }
+        else
+        {
+            torScore.SetActive(false);
+        }
+
+        if (torRaceValue == 1)
+        {
+            torRace.SetActive(true);
+        }
+        else
+        {
+            torRace.SetActive(false);
+        }
     }
 
     private void Reload()
@@ -126,11 +170,7 @@ public class Achivments : MonoBehaviour
         SceneManager.LoadScene(9);
     }
 
-
-
-
-
-
+    // Setter to button for checking saving achivments
     public void SetOne()
     {
         PlayerPrefs.SetInt("forestTimeAchivment", 1);

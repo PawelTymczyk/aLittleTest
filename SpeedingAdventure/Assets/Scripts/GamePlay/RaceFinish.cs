@@ -39,7 +39,7 @@ public class RaceFinish : MonoBehaviour
 
         if (ModeSelect.RaceType == 0) // Score Mode
         { 
-            if(ModeScore.CurrentScore > 1000 && NumerRace == 0)
+            if(ModeScore.CurrentScore > 2000 && NumerRace == 0)
             {
                 PlayerPrefs.SetInt("forestScoreAchivment", 1);
                 ScoreMedal.SetActive(true);
@@ -47,6 +47,11 @@ public class RaceFinish : MonoBehaviour
             else if(ModeScore.CurrentScore > 2000 && NumerRace == 1)
             {
                 PlayerPrefs.SetInt("cityScoreAchivment", 1);
+                ScoreMedal.SetActive(true);
+            }
+            else if (ModeScore.CurrentScore > 2000 && NumerRace == 2)
+            {
+                PlayerPrefs.SetInt("torScoreAchivment", 1);
                 ScoreMedal.SetActive(true);
             }
         }
@@ -69,6 +74,11 @@ public class RaceFinish : MonoBehaviour
                     PlayerPrefs.SetInt("cityRaceAchivment", 1);
                     TimeMedal.SetActive(true);
                 }
+                else if (NumerRace == 2)
+                {
+                    PlayerPrefs.SetInt("torRaceAchivment", 1);
+                    TimeMedal.SetActive(true);
+                }
             }
         }
 
@@ -84,6 +94,12 @@ public class RaceFinish : MonoBehaviour
                 else if (NumerRace == 1)
                 {
                     PlayerPrefs.SetInt("cityRaceAchivment", 1);
+                    RaceMedal.SetActive(true);
+                }
+
+                else if (NumerRace == 2)
+                {
+                    PlayerPrefs.SetInt("torRaceAchivment", 1);
                     RaceMedal.SetActive(true);
                 }
             }
