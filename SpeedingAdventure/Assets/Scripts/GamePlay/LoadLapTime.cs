@@ -12,8 +12,30 @@ public class LoadLapTime : MonoBehaviour
     public GameObject SecondDisplay;
     public GameObject MilisecondDisplay;
 
+    public int NumberMap;
+
     void Update()
     {
+        //if (NumberMap == 0)
+        //{
+        //    MinuteCount = PlayerPrefs.GetInt("MinuteSave");
+        //    SecondCount = PlayerPrefs.GetInt("SecondSave");
+        //    MiliescondCount = PlayerPrefs.GetFloat("MilisecondSave");
+        //}
+        //else if (NumberMap == 1)
+        //{
+        //    MinuteCount = PlayerPrefs.GetInt("MinuteSave");
+        //    SecondCount = PlayerPrefs.GetInt("SecondSave");
+        //    MiliescondCount = PlayerPrefs.GetFloat("MilisecondSave");
+        //}
+        //else
+        //{
+        //    MinuteCount = PlayerPrefs.GetInt("MinuteSave");
+        //    SecondCount = PlayerPrefs.GetInt("SecondSave");
+        //    MiliescondCount = PlayerPrefs.GetFloat("MilisecondSave");
+        //}
+
+
         MinuteCount = PlayerPrefs.GetInt("MinuteSave");
         SecondCount = PlayerPrefs.GetInt("SecondSave");
         MiliescondCount = PlayerPrefs.GetFloat("MilisecondSave");

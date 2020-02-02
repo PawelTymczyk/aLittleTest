@@ -59,27 +59,22 @@ public class RaceFinish : MonoBehaviour
         if(ModeSelect.RaceType == 1) // Time Mode
         { 
             CoutingTime.SetActive(false);
-
-            // # TIME #
-
-            if ( true )
+            if (NumerRace == 0 ) // mniejszy niż minuta
             {
-                if (NumerRace == 0)
-                {
-                    PlayerPrefs.SetInt("forestRaceAchivment", 1);
-                    TimeMedal.SetActive(true);
-                }
-                else if (NumerRace == 1)
-                {
-                    PlayerPrefs.SetInt("cityRaceAchivment", 1);
-                    TimeMedal.SetActive(true);
-                }
-                else if (NumerRace == 2)
-                {
-                    PlayerPrefs.SetInt("torRaceAchivment", 1);
-                    TimeMedal.SetActive(true);
-                }
+                PlayerPrefs.SetInt("forestTimeAchivment", 1);
+                TimeMedal.SetActive(true);
             }
+            else if (NumerRace == 1) // mniejszy niż 3.30
+            {
+                PlayerPrefs.SetInt("cityTimeAchivment", 1);
+                TimeMedal.SetActive(true);
+            }
+            else if (NumerRace == 2) // ?? 
+            {
+                PlayerPrefs.SetInt("torTimeAchivment", 1);
+                TimeMedal.SetActive(true);
+            }
+
         }
 
         if(ModeSelect.RaceType == 2) // Race Mode

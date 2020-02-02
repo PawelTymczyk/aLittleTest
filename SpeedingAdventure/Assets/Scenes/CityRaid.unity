@@ -14298,6 +14298,7 @@ MonoBehaviour:
   LapsDone: 0
   bestTime: 0
   RaceFinish: {fileID: 579574250}
+  NumberMap: 1
 --- !u!1 &1113448017
 GameObject:
   m_ObjectHideFlags: 0
@@ -17376,6 +17377,7 @@ MonoBehaviour:
   MinuteDisplay: {fileID: 2084014782}
   SecondDisplay: {fileID: 1591721556}
   MilisecondDisplay: {fileID: 1776689867}
+  NumberMap: 1
 --- !u!4 &1364573967
 Transform:
   m_ObjectHideFlags: 0
@@ -23497,6 +23499,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d2690d5acf73d4abb52736992735dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MinuteBox: {fileID: 2084014782}
+  SecondBox: {fileID: 1591721556}
+  MilisecondBox: {fileID: 1776689867}
   menu: {fileID: 378404702}
   CurrentScene: 7
 --- !u!1001 &1725964363

@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuTrack : MonoBehaviour
 {
-   
+    public GameObject MinuteBox;
+    public GameObject SecondBox;
+    public GameObject MilisecondBox;
+
     public GameObject menu;
     public int CurrentScene;
     private bool IsMenu = false;
@@ -39,6 +43,16 @@ public class MenuTrack : MonoBehaviour
     public void ReloadCurrentScene()
     {
         Time.timeScale = 1;
+
+        MinuteBox.GetComponent<Text>().text = "00:";
+        SecondBox.GetComponent<Text>().text = "00.";
+        MilisecondBox.GetComponent<Text>().text = "0";
+
+        LapTimeMenager.MinuteCount = 0;
+        LapTimeMenager.SecondCount = 0;
+        LapTimeMenager.MilisecondCount = 0;
+
+        ModeScore.CurrentScore = 0;
         SceneManager.LoadScene(CurrentScene);
     }
 
