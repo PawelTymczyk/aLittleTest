@@ -11,15 +11,11 @@ public class SettingsMenu : MonoBehaviour
     public GameObject PathTipCheckbox;
 
     //public GameObject PathTipText;
-    //public GameObject FullScreenText;
-
     private int PathTip;
 
     Resolution[] resolutions;
     void Start()
     {
-        //int fullScreen;
-
         resolutions = Screen.resolutions;
 
         resolutionsDropDown.ClearOptions();
@@ -54,8 +50,6 @@ public class SettingsMenu : MonoBehaviour
         //{
         //    PathTipCheckbox.GetComponent<Toggle>().isOn = false;
         //}
-
-        //fullScreen = PlayerPrefs.GetInt("FullScreen");
     }
 
     public void SetVolume (float volume)
@@ -72,15 +66,6 @@ public class SettingsMenu : MonoBehaviour
     public void SetFullScreen(bool isFullScreen)
     {
         Screen.fullScreen = isFullScreen;
-
-        //if (isFullScreen)
-        //{
-        //    PlayerPrefs.SetInt("FullScreen", 0);
-        //}
-        //else
-        //{
-        //    PlayerPrefs.SetInt("FullScreen", 1);
-        //}
     }
 
     public void SetResolution (int resolutionIndex)
@@ -111,18 +96,6 @@ public class SettingsMenu : MonoBehaviour
     }
 
     //private void SetPathTipText()
-    //{
-    //    if (true)
-    //    {
-
-    //    }
-    //    else
-    //    {
-
-    //    }
-    //}
-
-    //private void SetFullScreenText()
     //{
     //    if (true)
     //    {

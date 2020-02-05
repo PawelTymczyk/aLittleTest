@@ -23,18 +23,6 @@ public class LapComplete : MonoBehaviour
     void OnTriggerEnter()
     {
         LapsDone += 1;
-        //if(NumberMap == 0)
-        //{
-        //    bestTime = PlayerPrefs.GetFloat("RawTime0");
-        //}
-        //else if (NumberMap == 1)
-        //{
-        //    bestTime = PlayerPrefs.GetFloat("RawTime1");
-        //}
-        //else
-        //{
-        //    bestTime = PlayerPrefs.GetFloat("RawTime2");
-        //}
 
         bestTime = PlayerPrefs.GetFloat("RawTime");
 
@@ -60,30 +48,6 @@ public class LapComplete : MonoBehaviour
             }
 
             MilisecondDisplay.GetComponent<Text>().text = "" + LapTimeMenager.MilisecondCount;
-
-
-            //if (NumberMap == 0)
-            //{
-            //    PlayerPrefs.SetInt("MinuteSave0", LapTimeMenager.MinuteCount);
-            //    PlayerPrefs.SetInt("SecondSave0", LapTimeMenager.SecondCount);
-            //    PlayerPrefs.SetFloat("MilisecondSave0", LapTimeMenager.MilisecondCount);
-            //    PlayerPrefs.SetFloat("RawTime0", LapTimeMenager.BestTime);
-            //}
-            //else if (NumberMap == 1)
-            //{
-            //    PlayerPrefs.SetInt("MinuteSave1", LapTimeMenager.MinuteCount);
-            //    PlayerPrefs.SetInt("SecondSave1", LapTimeMenager.SecondCount);
-            //    PlayerPrefs.SetFloat("MilisecondSave1", LapTimeMenager.MilisecondCount);
-            //    PlayerPrefs.SetFloat("RawTime1", LapTimeMenager.BestTime);
-            //}
-            //else
-            //{
-            //    PlayerPrefs.SetInt("MinuteSave2", LapTimeMenager.MinuteCount);
-            //    PlayerPrefs.SetInt("SecondSave2", LapTimeMenager.SecondCount);
-            //    PlayerPrefs.SetFloat("MilisecondSave2", LapTimeMenager.MilisecondCount);
-            //    PlayerPrefs.SetFloat("RawTime2", LapTimeMenager.BestTime);
-            //}
-
 
             PlayerPrefs.SetInt("MinuteSave", LapTimeMenager.MinuteCount);
             PlayerPrefs.SetInt("SecondSave", LapTimeMenager.SecondCount);

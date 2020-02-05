@@ -6,9 +6,12 @@ public class ErrorMsg : MonoBehaviour
 {
     public GameObject ErrorText;
 
-    public void OnTriggerEnter()
+    public void OnTriggerEnter(Collider other)
     {
-        StartCoroutine(ShowHideError());
+        if(other.tag == "Player")
+        {
+            StartCoroutine(ShowHideError());
+        }
     }
 
     IEnumerator ShowHideError()
